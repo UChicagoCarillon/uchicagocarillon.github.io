@@ -51,3 +51,7 @@ div {
   align-items: center;
   background: black;
 }
+
+.adjust-line-height {
+  line-height: 1em;
+}
