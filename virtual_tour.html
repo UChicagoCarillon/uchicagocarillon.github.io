@@ -1,1 +1,57 @@
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UChicago Carillon</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Waterfall&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	</head>
+	<script>
+		var i = 0;
+		var txt = "hello! we're so glad you dropped in. we play the bells of rockefeller tower!";
+		var speed = 50;
+		
+		function typeWriter() {
+			if (i < txt.length) {
+				document.getElementById("demo").innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			}
+		}
+		window.onload = typeWriter;
+	</script>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+			<li><a href="tour.html">Tours</a></li>
+			<li><a href="virtual_tour.html">Virtual Tour</a></li>
+        		<li><a href="people.html">People</a></li>
+        		<li><a href="joinus.html">Join Us</a></li>
+    		</ul>
+		</nav>
+		<div class="adjust-line-height">
+			<h1 style="color:white;"><span style="font-size:0.9em;">UChicago Guild</span> <br>
+				<span style="font-size:0.5em; vertical-align:super;font-family:'Sofia', sans-serif;" ><em>of</em></span> <span style="font-size:1.6em;">Carillonneurs</span> 
+			</h1>
+    		</div><!-- /.adjust-line-height -->
+		<hr style="height:1px;border-width:5;color:white;background-color:white">
+		
+		<center>
+			<p id="demo" style="color:white;font-family:'Quicksand';"></p>
+			<img src = "https://images.squarespace-cdn.com/content/v1/5518e7b9e4b0c99d03da9599/1527652361047-0O5P2SRA7WFOSKXARGG2/Evening_Matt+Frankel.jpeg?format=2500w" width="700" height="450" hspace="20">
+			<p style="color:#9295a1;font-family:'Quicksand';font-size:1.2em;"> The Guild of Carillonists at UChicago is a student group led by Joey Brink, the University Carillonist, that plays the 72 bells on the Laura Spelman Rockefeller Memorial Carillon. We are 20 students both at the undergraduate and graduate levels. We hold auditions every fall quarter for students of the university with at least 3 years left in their program. </p>
+			<h2 style="color:white;"><span style="font-size:1.5em;">What is the Carillon?</span>
+			</h2>
+			<p style="color:#9295a1;font-family:'Quicksand';font-size:1.2em;"> Carillons are some of the largest instruments in the world by weight and are usually housed in a tower, although there exist traveling carillons that are mobile. They are incredibly varied in sound, age, structure, and behavior, with no carillon being equal to another. The instrument`s bells are usually cast together as part of a set and tuned prior to their installation. The sound produced by the carillon is often considered serious and somber, and it is widely portrayed in media as such. It has a great dynamic range and an extensive repertoire of pieces that are growing steadily each year. </p>
+			<img src = "https://humanities-web.s3.us-east-2.amazonaws.com/college-prod/s3fs-public/styles/max_width_full/public/carillon-1286.jpg?itok=lwODcKul" align="left" width="400" height="250">
+			<img src = "/photos/rockefeller_vertical.jpg" align="center" width="250" height="400">
+			<img src = "https://www.enjoyillinois.com/assets/Tourism-Operators/images/itims/25059_bells1.jpg" align="right" width="400" height="250">
+			<p style="color:#9295a1;font-family:'Quicksand';font-size:1.2em;">Bells are thought to have existed in China since about 1600 B.C. The church bell most familiar to us today, however, was developed in the west during the Middle Ages. They had been widely used as a form of a call to prayer. It was not until the 16th and 17th centuries, however, that bells began to be played together to make music, and the carillon as an instrument began to take shape. Its modern form consists of more than 23 bells which produce the chromatic scale of musical notes. The bells are played through a keyboard made up of batons that move a mass to strike the side or interior of a bell. The shape of a bell has been changed through the centuries through careful experimentation to its current form and unique timber, often described as ominous and serious.</p>
+		</center>
+	</body>
+</html>
