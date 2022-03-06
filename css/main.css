@@ -59,3 +59,9 @@ div {
 .adjust-line-height {
   line-height: 3.2em;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
